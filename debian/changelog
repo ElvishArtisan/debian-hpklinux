@@ -1,0 +1,5 @@
+hpklinux (4.20.35-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Fred Gleason <fredg@paravelsystems.com>  Mon, 17 May 2021 14:40:22 -0400

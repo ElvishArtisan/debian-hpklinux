@@ -1,0 +1,19 @@
+Source: hpklinux
+Section: unknown
+Priority: optional
+Maintainer: Fred Gleason <fredg@paravelsystems.com>
+Build-Depends: debhelper-compat (= 12), autotools-dev
+Standards-Version: 4.4.1
+Homepage: https://audioscience.com
+
+Package: hpklinux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: HPI Driver for AudioScience Audio Adapters
+ HPI driver for the AudioScience line of professional audio adapters.
+
+Package: hpklinux-dev
+Architecture: any
+Depends: ${misc:Depends}, hpklinux (= 4.20.35-1)
+Description: Development files for AudioScience Audio Adapters
+ Development files for the AudioScience HPI driver.

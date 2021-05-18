@@ -1,0 +1,4 @@
+This is the Debian packaging data for the 'hpklinux' driver for
+AudioScience sound adapters.
+
+dpkg-buildpackage -us -uc

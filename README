@@ -1,0 +1,16 @@
+To build a set of hpklinux DEB packages:
+
+1) Copy the source tarball to this directory.
+
+2) Set the ASIHPI_VERSION in 'prepare_build.sh' and the 'postinst', 'prerm'
+   and 'rules' files in 'debian/'.
+
+3) Run the following commands:
+
+   cd <this_directory>
+   ./prepare_build.sh
+   cd hpklinux_<version>
+   dpkg-buildpackage -us -uc
+   cd ..
+
+4) Packages are in the current directory.
