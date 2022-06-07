@@ -8,12 +8,12 @@ Homepage: https://audioscience.com
 
 Package: hpklinux
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, build-essential, dkms, p7zip-full, linux-headers-@KERNEL_VERSION@, devscripts, fakeroot, debhelper, debian-archive-keyring, ubuntu-dev-tools
+Depends: ${shlibs:Depends}, ${misc:Depends}, build-essential, dkms, p7zip-full, linux-headers, devscripts, fakeroot, debhelper, debian-archive-keyring, ubuntu-dev-tools
 Description: HPI Driver for AudioScience Audio Adapters
  HPI driver for the AudioScience line of professional audio adapters.
 
 Package: hpklinux-dev
 Architecture: any
-Depends: ${misc:Depends}, hpklinux (= 4.20.35-1)
+Depends: ${misc:Depends}, hpklinux (= 4.20.35-2)
 Description: Development files for AudioScience Audio Adapters
  Development files for the AudioScience HPI driver.

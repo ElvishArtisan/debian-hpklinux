@@ -1,3 +1,10 @@
+hpklinux (4.20.35-2) unstable; urgency=medium
+
+	* Changed the 'linux-headers' dependencies so as not to include
+	the specific kernel version.
+
+ -- Fred Gleason <fredg@paravelsystems.com>  Tue, 7 June 2022 14:59:00 -0400
+
 hpklinux (4.20.35-1) unstable; urgency=medium
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
