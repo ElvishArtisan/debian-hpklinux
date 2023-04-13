@@ -13,3 +13,6 @@
 	* Modified the 'linux-headers' dependencies so as not to include
 	the specific kernel version.
 	* Incremented the package version to 4.20.35-2.
+2023-04-13 Fred Gleason <fredg@paravelsystems.com>
+	* Fixed a bug in the 'prerm' script that made it impossible to
+	uninstall the 'hpklinux' package.

@@ -21,8 +21,7 @@ ASIHPI_MAJOR_VERSION=4.20
 
 case "$1" in
     remove|upgrade|deconfigure)
-	rmmod asihpi
-	dkms uninstall -m asihpi -v $ASIHPI_VERSION
+	modprobe -r asihpi
 	dkms remove asihpi/$ASIHPI_VERSION --all
 	rm -rf /usr/src/asihpi-$ASIHPI_VERSION
 	rm -rf /lib/firmware/asihpi/$ASIHPI_MAJOR_VERSION
