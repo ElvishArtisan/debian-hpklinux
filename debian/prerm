@@ -3,7 +3,6 @@
 #
 # see: dh_installdeb(1)
 
-set -e
 ASIHPI_VERSION=4.20.35
 ASIHPI_MAJOR_VERSION=4.20
 
@@ -21,7 +20,6 @@ ASIHPI_MAJOR_VERSION=4.20
 
 case "$1" in
     remove|upgrade|deconfigure)
-	modprobe -r asihpi
 	dkms remove asihpi/$ASIHPI_VERSION --all
 	rm -rf /usr/src/asihpi-$ASIHPI_VERSION
 	rm -rf /lib/firmware/asihpi/$ASIHPI_MAJOR_VERSION
