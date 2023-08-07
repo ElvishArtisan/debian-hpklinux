@@ -1,3 +1,9 @@
+hpklinux (4.20.35-3) stable; urgency=medium
+
+	* Fixed a bug that threw an error during package removal.
+
+ -- Fred Gleason <fredg@paravelsystems.com>  Mon, 7 August 2023 13:08:00 -0400
+
 hpklinux (4.20.35-2) unstable; urgency=medium
 
 	* Changed the 'linux-headers' dependencies so as not to include
