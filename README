@@ -1,16 +1,11 @@
-To build a set of hpklinux DEB packages:
+DEB packaging for the AudioScience HPI driver
 
-1) Copy the source tarball to this directory.
+To build a set of DEB packages for hpklinux-4.20.39, run the following
+commands:
 
-2) Set the ASIHPI_VERSION in 'prepare_build.sh' and the 'postinst', 'prerm'
-   and 'rules' files in 'debian/'.
-
-3) Run the following commands:
-
-   cd <this_directory>
    ./prepare_build.sh
-   cd hpklinux_<version>
+   cd hpklinux_4.20.39
    dpkg-buildpackage -us -uc
    cd ..
 
-4) Packages are in the current directory.
+Packages are in the current directory.

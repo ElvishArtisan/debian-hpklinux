@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-ASIHPI_VERSION=4.20.35
+ASIHPI_VERSION=4.20.39
 
 build:	
 	make -C hpi-lib

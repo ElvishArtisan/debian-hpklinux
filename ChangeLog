@@ -22,3 +22,5 @@
 	* Fixed bugs in 'debian/prerm' that caused package removal to fail.
 2023-08-07 Fred Gleason <fredg@paravelsystems.com>
 	* Incremented the package version to 4.20.35-3.
+2023-08-11 Fred Gleason <fredg@paravelsystems.com>
+	* Incremented the package version to 4.20.39-1.

@@ -3,7 +3,7 @@
 #
 # see: dh_installdeb(1)
 
-ASIHPI_VERSION=4.20.35
+ASIHPI_VERSION=4.20.39
 ASIHPI_MAJOR_VERSION=4.20
 
 # summary of how this script can be called:
