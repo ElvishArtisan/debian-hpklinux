@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# load_asihpi.sh
+#
+#  Ensure that the AudioScience HPI driver is properly loaded.
+#
+#   (C) Copyright 2023 Fred Gleason <fredg@paravelsystems.com>
+#
+#   This program is free software; you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License version 2 as
+#   published by the Free Software Foundation.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public
+#   License along with this program; if not, write to the Free Software
+#   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+#
+
+if test `grep --count asihpi /proc/modules` -eq 0 ; then
+    dkms build -m asihpi -v @ASIHPI_VERSION@
+    dkms install -m asihpi -v @ASIHPI_VERSION@
+    modprobe asihpi
+fi

@@ -42,10 +42,14 @@ binary:
 	cp hpi-cli-apps/asihpi_si4688 debian/hpklinux/usr/bin/
 	cp hpi-cli-apps/asihpitest debian/hpklinux/usr/bin/
 	cp hpi-cli-apps/asihpitune debian/hpklinux/usr/bin/
+	mkdir -p debian/hpklinux/usr/sbin
+	cp debian/load_asihpi.sh debian/hpklinux/usr/sbin/
 	mkdir -p debian/hpklinux/usr/src/asihpi-$(ASIHPI_VERSION)
 	cp -a hpi-drv/* debian/hpklinux/usr/src/asihpi-$(ASIHPI_VERSION)/
 	mkdir -p debian/hpklinux/etc/modprobe.d
 	echo "blacklist snd-asihpi" > debian/hpklinux/etc/modprobe.d/blacklist-snd-asihpi.conf
+	mkdir -p debian/hpklinux/lib/systemd/system
+	cp debian/hpklinux.service debian/hpklinux/lib/systemd/system/
 	dh_strip_nondeterminism
 	dh_compress
 	dh_fixperms

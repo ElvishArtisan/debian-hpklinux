@@ -1,0 +1,11 @@
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/sbin/load_asihpi.sh
+
+[Unit]
+Description=AudioScience HPI Driver
+Before=rivendell.service
+
+[Install]
+WantedBy=multi-user.target

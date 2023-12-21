@@ -1,17 +1,15 @@
 #!/bin/sh
 # postinst script for hpklinux
 
-ASIHPI_VERSION=4.20.39
-ASIHPI_MAJOR_VERSION=4.20
+#ASIHPI_VERSION=4.20.39
+#ASIHPI_MAJOR_VERSION=4.20
 
 case "$1" in
     configure)
 	ldconfig
-	dkms add -m asihpi -v $ASIHPI_VERSION
-	dkms build -m asihpi -v $ASIHPI_VERSION
-	dkms install -m asihpi -v $ASIHPI_VERSION
-	modprobe asihpi
-    ;;
+	/usr/sbin/load_asihpi.sh
+	/bin/systemctl daemon-reload
+	;;
 
     abort-upgrade|abort-remove|abort-deconfigure)
     ;;
