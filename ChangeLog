@@ -27,3 +27,5 @@
 2023-12-21 Fred Gleason <fredg@paravelsystems.com>
 	* Added a check to ensure that the kernel module is built, installed
 	and loaded after each system reboot.
+2023-12-21 Fred Gleason <fredg@paravelsystems.com>
+	* Removed version-specific information from 'debian/postinst'.
