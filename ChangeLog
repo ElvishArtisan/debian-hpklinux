@@ -33,3 +33,5 @@
 	* Added 'versions.sh' as the single source of current version
 	information.
 	* Cleaned up formatting errors in 'debian/changelog'.
+2023-12-22 Fred Gleason <fredg@paravelsystems.com>
+	* Incremented the package version to 4.20.39-2.

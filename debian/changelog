@@ -1,3 +1,9 @@
+hpklinux (4.20.39-2) stable; urgency=medium
+
+  * Added a check to ensure that the kernel module is built, installed and loaded after each system reboot.
+
+ -- Fred Gleason <fredg@paravelsystems.com>  Fri, 22 Dec 2023 10:12:00 -0500
+
 hpklinux (4.20.39-1) stable; urgency=medium
 
   * Restored support for ASI66xx adapters.
