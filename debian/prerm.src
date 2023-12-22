@@ -3,9 +3,6 @@
 #
 # see: dh_installdeb(1)
 
-ASIHPI_VERSION=4.20.39
-ASIHPI_MAJOR_VERSION=4.20
-
 # summary of how this script can be called:
 #        * <prerm> `remove'
 #        * <old-prerm> `upgrade' <new-version>
@@ -20,9 +17,9 @@ ASIHPI_MAJOR_VERSION=4.20
 
 case "$1" in
     remove|upgrade|deconfigure)
-	dkms remove asihpi/$ASIHPI_VERSION --all
-	rm -rf /usr/src/asihpi-$ASIHPI_VERSION
-	rm -rf /lib/firmware/asihpi/$ASIHPI_MAJOR_VERSION
+	dkms remove asihpi/@ASIHPI_VERSION@ --all
+	rm -rf /usr/src/asihpi-@ASIHPI_VERSION@
+	rm -rf /lib/firmware/asihpi/@ASIHPI_MAJOR_VERSION@
     ;;
 
     failed-upgrade)

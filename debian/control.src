@@ -14,6 +14,6 @@ Description: HPI Driver for AudioScience Audio Adapters
 
 Package: hpklinux-dev
 Architecture: any
-Depends: ${misc:Depends}, hpklinux (= 4.20.39-1)
+Depends: ${misc:Depends}, hpklinux (= @ASIHPI_PKG_VERSION@)
 Description: Development files for AudioScience Audio Adapters
  Development files for the AudioScience HPI driver.

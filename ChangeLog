@@ -29,3 +29,7 @@
 	and loaded after each system reboot.
 2023-12-21 Fred Gleason <fredg@paravelsystems.com>
 	* Removed version-specific information from 'debian/postinst'.
+2023-12-22 Fred Gleason <fredg@paravelsystems.com>
+	* Added 'versions.sh' as the single source of current version
+	information.
+	* Cleaned up formatting errors in 'debian/changelog'.

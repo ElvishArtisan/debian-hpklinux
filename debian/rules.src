@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-ASIHPI_VERSION=4.20.39
-
 build:	
 	make -C hpi-lib
 	make -C hpi-cli-apps
@@ -44,8 +42,8 @@ binary:
 	cp hpi-cli-apps/asihpitune debian/hpklinux/usr/bin/
 	mkdir -p debian/hpklinux/usr/sbin
 	cp debian/load_asihpi.sh debian/hpklinux/usr/sbin/
-	mkdir -p debian/hpklinux/usr/src/asihpi-$(ASIHPI_VERSION)
-	cp -a hpi-drv/* debian/hpklinux/usr/src/asihpi-$(ASIHPI_VERSION)/
+	mkdir -p debian/hpklinux/usr/src/asihpi-@ASIHPI_VERSION@
+	cp -a hpi-drv/* debian/hpklinux/usr/src/asihpi-@ASIHPI_VERSION@/
 	mkdir -p debian/hpklinux/etc/modprobe.d
 	echo "blacklist snd-asihpi" > debian/hpklinux/etc/modprobe.d/blacklist-snd-asihpi.conf
 	mkdir -p debian/hpklinux/lib/systemd/system
