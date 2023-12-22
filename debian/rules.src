@@ -48,6 +48,8 @@ binary:
 	echo "blacklist snd-asihpi" > debian/hpklinux/etc/modprobe.d/blacklist-snd-asihpi.conf
 	mkdir -p debian/hpklinux/lib/systemd/system
 	cp debian/hpklinux.service debian/hpklinux/lib/systemd/system/
+	mkdir -p debian/hpklinux/usr/share/doc/hpklinux
+	cp debian/README debian/hpklinux/usr/share/doc/hpklinux/
 	dh_strip_nondeterminism
 	dh_compress
 	dh_fixperms

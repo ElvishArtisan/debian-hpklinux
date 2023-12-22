@@ -1,4 +1,13 @@
-This is the Debian packaging data for the 'hpklinux' driver for
-AudioScience sound adapters.
+This is the README file for the "hpklinux" AudioScience HPI driver.
 
-dpkg-buildpackage -us -uc
+HPI is a sound card API for use with the line of audio adapters manufactured
+by AudioScience (https://audioscience.com/). It is similar to (though not
+compatible with) the generic ALSA system used for many sound devices on
+Linux, while providing additional high-end features that are useful for
+professional broadcast audio applications.
+
+The driver can be activated by enabling the 'hpklinux' Systemd service, as
+follows:
+
+	systemctl enable hpklinux
+	systemctl start hpklinux
