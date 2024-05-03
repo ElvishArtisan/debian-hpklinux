@@ -39,3 +39,5 @@
 	* Added a user README file.
 2023-12-22 Fred Gleason <fredg@paravelsystems.com>
 	* Incremented the package version to 4.20.39-3.
+2024-05-03 Fred Gleason <fredg@paravelsystems.com>
+	* Forked to 'hpi4.20.43'.
